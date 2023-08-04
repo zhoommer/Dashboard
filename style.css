@@ -127,7 +127,6 @@ header {
   grid-area: head;
   height: 6em;
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
   transition: all 0.3s ease;
   box-shadow: 0px 0px 15px 0px var(--color-sidebar-background);
@@ -258,6 +257,67 @@ aside > div {
   position: relative;
   top: 0.1em;
 }
+
+
+/* HEADER CSS STYLE */
+
+.dotted {
+	position: relative;
+	bottom: 0.4em;
+}
+.dotted::before {
+	content: "\2022";
+	color: var(--color-success);
+	font-size: 2em;
+	position: relative;
+	top: 0.1em;
+}
+
+.hl-top >span, h5 {
+	margin-left: 1em;
+}
+
+.hl-bottom > a {
+	text-decoration: none;
+	color: var(--color-dark);
+	padding: 0 15px;
+	font-weight: 400;
+}
+
+.hl-bottom > a:nth-child(6) {
+	border: 1px solid #AA33FF;
+	color: #AA33FF;
+	border-radius: 0.3em;
+	padding: 0.5em;
+	font-weight: 600;
+}
+
+header > div:first-child {
+	flex: 50%;
+}
+
+header > div:last-child {
+	flex: 50%;
+	justify-content: end;
+	position: relative;
+	right: 15em;
+}
+
+button {
+	width: 6em;
+}
+
+input[type="search"] {
+	width: 10em;
+	margin-left: 2em;
+	padding-left:  10px;
+}
+
+img {
+	margin-left: 2em;
+	object-fit: cover;
+}
+
 
 /* Mobile */
 @media (max-width: 480px) {

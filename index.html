@@ -22,7 +22,39 @@
   </head>
   <body>
     <main>
-      <header class="border rounded">Header</header>
+      <header class="border rounded">
+        <div class="header-left">
+          <div class="hl-top d-flex align-items-center">
+            <h5>Customer Stories - Q4</h5>
+            <span class="material-symbols-outlined"> grade </span>
+            <span class="dotted fw-bold">On Track</span>
+          </div>
+
+          <div class="hl-bottom">
+            <a href="#">Overview</a>
+            <a href="#">List</a>
+            <a href="#">Board</a>
+            <a href="#">Timeline</a>
+            <a href="#">Calendar</a>
+            <a href="#">Dashboard</a>
+            <a href="#">More...</a>
+          </div>
+        </div>
+
+        <div class="header-right d-flex justify-content-end">
+          <button class="bg-white border rounded d-flex align-items-center fw-bold">
+			  <span class="material-symbols-outlined" id="share"> share </span>Share
+          </button>
+          <input type="search" placeholder="Search" class="border rounded" />
+          <img
+            src="./images/user.png"
+            alt="user"
+            class="border rounded-circle"
+            width="24px"
+            height="24px"
+          />
+        </div>
+      </header>
       <article class="border rounded">Content</article>
 
       <aside class="rounded">
@@ -87,7 +119,7 @@
           </div>
         </div>
         <div class="favorites">
-			<h3 class="text-secondary m-4">Favorites</h3>
+          <h3 class="text-secondary m-4">Favorites</h3>
           <ul class="favorites-nav">
             <li class="fav-item">
               <a href="#" class="fav-links">Recruiting weekly me...</a>

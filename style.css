@@ -171,7 +171,7 @@ aside::-webkit-scrollbar-track {
 }
 
 aside::-webkit-scrollbar-thumb {
-	background-color: red;
+	background-color: var(--color-danger);
 	border-radius: 10px;
 }
 
@@ -230,7 +230,7 @@ aside > div {
 }
 
 .side-links:hover {
-  color: pink;
+  color: var(--color-danger);
 }
 
 .side-links > h3 {
@@ -243,6 +243,12 @@ aside > div {
 .fav-links {
   color: var(--color-white);
   text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.fav-links:hover {
+	text-decoration: underline;
+	text-decoration-color: var(--color-danger);
 }
 
 .favorites-nav {
